@@ -1,0 +1,28 @@
+{
+    "dashboard": [
+        {
+            "label": "Dashboard",
+            "route": "dashboard"
+        }
+    ],
+    "user": [
+        {
+            "label": "Dashboard",
+            "route": "dashboard"
+        },
+        {
+            "label": "Pengguna",
+            "route": "user"
+        }
+    ],
+    "role": [
+        {
+            "label": "Dashboard",
+            "route": "dashboard"
+        },
+        {
+            "label": "Hak Akses Pengguna",
+            "route": "role"
+        }
+    ]
+}

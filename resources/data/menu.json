@@ -1,0 +1,32 @@
+[
+    {
+        "title": "Dashboard",
+        "route": "dashboard",
+        "permissions": [
+            "view dashboard"
+        ]
+    },
+    {
+        "active": "user-management",
+        "title": "Kelola Pengguna",
+        "permissions": [
+            "view user"
+        ],
+        "children": [
+            {
+                "title": "Pengguna",
+                "route": "user-management.users",
+                "permissions": [
+                    "view user"
+                ]
+            },
+            {
+                "title": "Hak Akses Pengguna",
+                "route": "user-management.roles",
+                "permissions": [
+                    "view role"
+                ]
+            }
+        ]
+    }
+]

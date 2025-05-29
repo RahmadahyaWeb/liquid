@@ -1,0 +1,15 @@
+@import 'tailwindcss';
+@import "flowbite/src/themes/default";
+@source "../../node_modules/flowbite";
+
+input:focus {
+    outline: none !important;
+}
+
+.highest-z {
+    z-index: 10 !important;
+}
+
+div[drawer-backdrop] {
+    z-index: 10 !important;
+}
