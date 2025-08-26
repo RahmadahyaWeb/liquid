@@ -122,6 +122,26 @@
         ]
     },
     {
+        "active": "ar-management",
+        "title": "Kelola Piutang",
+        "children": [
+            {
+                "title": "AR",
+                "route": "ar-management.receivables",
+                "permissions": [
+                    "view ar"
+                ]
+            },
+            {
+                "title": "Pembayaran",
+                "route": "ar-management.payments",
+                "permissions": [
+                    "view pembayaran"
+                ]
+            }
+        ]
+    },
+    {
         "active": "fifo-management",
         "title": "Fifo",
         "children": [
@@ -178,6 +198,13 @@
                 "route": "report.report-fifo",
                 "permissions": [
                     "view report-fifo"
+                ]
+            },
+            {
+                "title": "Laporan AR",
+                "route": "report.report-ar",
+                "permissions": [
+                    "view report-ar"
                 ]
             }
         ]

@@ -18,7 +18,7 @@
     'url' => 'http://localhost',
     'frontend_url' => 'http://localhost:3000',
     'asset_url' => NULL,
-    'timezone' => 'UTC',
+    'timezone' => 'Asia/Makassar',
     'locale' => 'id',
     'fallback_locale' => 'id',
     'faker_locale' => 'id_ID',

@@ -1,5 +1,6 @@
 <?php
 
+use App\Livewire\Menu\Report\ReportAr;
 use App\Livewire\Menu\Report\ReportFifo;
 use App\Livewire\Menu\Report\ReportProducts;
 use App\Livewire\Menu\Report\ReportPurchases;
@@ -14,4 +15,5 @@ Route::prefix('report')
         Route::get('/report-sales', ReportSales::class)->name('report-sales')->middleware('permission:view report-penjualan');
         Route::get('/report-purchases', ReportPurchases::class)->name('report-purchases')->middleware('permission:view report-pembelian');
         Route::get('/report-fifo', ReportFifo::class)->name('report-fifo')->middleware('permission:view report-fifo');
+        Route::get('/report-ar', ReportAr::class)->name('report-ar')->middleware('permission:view report-ar');
     });

@@ -72,6 +72,14 @@ class SalesInvoice extends Model
         $salesOrder->update([
             'status' => 'invoiced'
         ]);
+
+        $invoice->receivable()->create([
+            'customer_id' => $invoice->customer_id,
+            'amount'      => $invoice->total_bayar,
+            'balance'     => $invoice->total_bayar,
+            'due_date'    => $invoice->jatuh_tempo,
+            'status'      => 'OPEN',
+        ]);
     }
 
     protected static function insertFifoUsage($productId, $warehouseId, $qtySisa, $invoiceDetail)
@@ -134,5 +142,10 @@ class SalesInvoice extends Model
     public function details()
     {
         return $this->hasMany(SalesInvoiceDetail::class);
+    }
+
+    public function receivable()
+    {
+        return $this->hasOne(Receivable::class);
     }
 }

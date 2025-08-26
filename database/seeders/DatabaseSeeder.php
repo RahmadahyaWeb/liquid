@@ -141,6 +141,14 @@ class DatabaseSeeder extends Seeder
             // CONFIG
             'view config',
             'edit config',
+
+
+            // AR
+            'view ar',
+            'view pembayaran',
+            'edit pembayaran',
+            'delete pembayaran',
+            'view report-ar',
         ];
 
         foreach ($permissions as $permission) {

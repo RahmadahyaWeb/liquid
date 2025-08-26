@@ -197,6 +197,26 @@
             "route": "master-management.fifo-layers"
         }
     ],
+    "ar-management.receivables": [
+        {
+            "label": "Dashboard",
+            "route": "dashboard"
+        },
+        {
+            "label": "Data AR",
+            "route": "ar-management.receivables"
+        }
+    ],
+    "ar-management.payments": [
+        {
+            "label": "Dashboard",
+            "route": "dashboard"
+        },
+        {
+            "label": "Data Pembayaran",
+            "route": "ar-management.payments"
+        }
+    ],
     "config": [
         {
             "label": "Dashboard",

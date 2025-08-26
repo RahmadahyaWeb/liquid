@@ -19,6 +19,7 @@ Route::middleware(['auth'])->group(function () {
     require __DIR__ . '/purchase-management/purchase-management.php';
     require __DIR__ . '/fifo-management/fifo-management.php';
     require __DIR__ . '/sales-management/sales-management.php';
+    require __DIR__ . '/ar-management/ar-management.php';
     require __DIR__ . '/report/report.php';
 
     Route::get('/logout', function () {

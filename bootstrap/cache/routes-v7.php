@@ -32,7 +32,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::o6dxHS8J3wFAYgof',
+            '_route' => 'generated::gkPliZsCyd4PsU1C',
           ),
           1 => NULL,
           2 => 
@@ -52,7 +52,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::lIbTxrjfbncGwekF',
+            '_route' => 'generated::5fRuJ74SopBGhn9y',
           ),
           1 => NULL,
           2 => 
@@ -91,7 +91,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::OvOGeaV2zp2K2S2p',
+            '_route' => 'generated::B2DmoLLMKpjrf7EO',
           ),
           1 => NULL,
           2 => 
@@ -131,7 +131,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::84teGsqmX9CWai3S',
+            '_route' => 'generated::U9QHyetYESexYgYv',
           ),
           1 => NULL,
           2 => 
@@ -465,6 +465,46 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
+      '/ar-management/receivables' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'ar-management.receivables',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/ar-management/payments' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'ar-management.payments',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
       '/report/report-products' => 
       array (
         0 => 
@@ -565,13 +605,33 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
+      '/report/report-ar' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'report.report-ar',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
       '/logout' => 
       array (
         0 => 
         array (
           0 => 
           array (
-            '_route' => 'generated::4lHpsMyGtg6gmSI2',
+            '_route' => 'generated::HqpMRsLORzI9m0uI',
           ),
           1 => NULL,
           2 => 
@@ -796,7 +856,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::o6dxHS8J3wFAYgof' => 
+    'generated::gkPliZsCyd4PsU1C' => 
     array (
       'methods' => 
       array (
@@ -808,7 +868,7 @@ app('router')->setCompiledRoutes(
       array (
         'uses' => 'Livewire\\Mechanisms\\FrontendAssets\\FrontendAssets@returnJavaScriptAsFile',
         'controller' => 'Livewire\\Mechanisms\\FrontendAssets\\FrontendAssets@returnJavaScriptAsFile',
-        'as' => 'generated::o6dxHS8J3wFAYgof',
+        'as' => 'generated::gkPliZsCyd4PsU1C',
       ),
       'fallback' => false,
       'defaults' => 
@@ -824,7 +884,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::lIbTxrjfbncGwekF' => 
+    'generated::5fRuJ74SopBGhn9y' => 
     array (
       'methods' => 
       array (
@@ -836,7 +896,7 @@ app('router')->setCompiledRoutes(
       array (
         'uses' => 'Livewire\\Mechanisms\\FrontendAssets\\FrontendAssets@maps',
         'controller' => 'Livewire\\Mechanisms\\FrontendAssets\\FrontendAssets@maps',
-        'as' => 'generated::lIbTxrjfbncGwekF',
+        'as' => 'generated::5fRuJ74SopBGhn9y',
       ),
       'fallback' => false,
       'defaults' => 
@@ -907,7 +967,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::OvOGeaV2zp2K2S2p' => 
+    'generated::B2DmoLLMKpjrf7EO' => 
     array (
       'methods' => 
       array (
@@ -936,7 +996,7 @@ app('router')->setCompiledRoutes(
                         \'exception\' => $exception,
                     ]), status: $exception ? 500 : 200);
                 }";s:5:"scope";s:54:"Illuminate\\Foundation\\Configuration\\ApplicationBuilder";s:4:"this";N;s:4:"self";s:32:"000000000000078e0000000000000000";}}',
-        'as' => 'generated::OvOGeaV2zp2K2S2p',
+        'as' => 'generated::B2DmoLLMKpjrf7EO',
       ),
       'fallback' => false,
       'defaults' => 
@@ -991,7 +1051,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::84teGsqmX9CWai3S' => 
+    'generated::U9QHyetYESexYgYv' => 
     array (
       'methods' => 
       array (
@@ -1013,7 +1073,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::84teGsqmX9CWai3S',
+        'as' => 'generated::U9QHyetYESexYgYv',
       ),
       'fallback' => false,
       'defaults' => 
@@ -1809,6 +1869,84 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
+    'ar-management.receivables' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'ar-management/receivables',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'auth',
+          2 => 'permission:view ar',
+        ),
+        'uses' => 'App\\Livewire\\Menu\\Receivable@__invoke',
+        'controller' => 'App\\Livewire\\Menu\\Receivable',
+        'as' => 'ar-management.receivables',
+        'namespace' => NULL,
+        'prefix' => '/ar-management',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'ar-management.payments' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'ar-management/payments',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'auth',
+          2 => 'permission:view pembayaran',
+        ),
+        'uses' => 'App\\Livewire\\Menu\\Payment@__invoke',
+        'controller' => 'App\\Livewire\\Menu\\Payment',
+        'as' => 'ar-management.payments',
+        'namespace' => NULL,
+        'prefix' => '/ar-management',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
     'report.report-products' => 
     array (
       'methods' => 
@@ -2004,7 +2142,46 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::4lHpsMyGtg6gmSI2' => 
+    'report.report-ar' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'report/report-ar',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'auth',
+          2 => 'permission:view report-ar',
+        ),
+        'uses' => 'App\\Livewire\\Menu\\Report\\ReportAr@__invoke',
+        'controller' => 'App\\Livewire\\Menu\\Report\\ReportAr',
+        'as' => 'report.report-ar',
+        'namespace' => NULL,
+        'prefix' => '/report',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'generated::HqpMRsLORzI9m0uI' => 
     array (
       'methods' => 
       array (
@@ -2029,7 +2206,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::4lHpsMyGtg6gmSI2',
+        'as' => 'generated::HqpMRsLORzI9m0uI',
       ),
       'fallback' => false,
       'defaults' => 
