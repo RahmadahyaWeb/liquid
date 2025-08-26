@@ -9,6 +9,8 @@ use Spatie\Permission\Models\Role;
 
 class User extends BaseComponent
 {
+    public $modalTitle = 'Form Pengguna';
+
     protected array $permissionMap = [
         'save' => ['edit user'],
         'edit' => ['edit user'],
@@ -84,6 +86,7 @@ class User extends BaseComponent
             $user = ModelsUser::findOrFail($this->editing['id']);
 
             $user->name = $this->editing['name'];
+            $user->email = $this->editing['email'];
             $user->save();
 
             if (!empty($this->editing['role'])) {
@@ -111,6 +114,10 @@ class User extends BaseComponent
             'roles.name' => 'Role',
         ];
 
-        return view('livewire.menu.user', compact('rows', 'columns'));
+        $columnFormats = [
+            'roles.name' => fn($row) => $row->roles->pluck('name')->join(', '),
+        ];
+
+        return view('livewire.menu.user', compact('rows', 'columns', 'columnFormats'));
     }
 }

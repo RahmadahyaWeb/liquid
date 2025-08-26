@@ -9,9 +9,6 @@
     {
         "active": "user-management",
         "title": "Kelola Pengguna",
-        "permissions": [
-            "view user"
-        ],
         "children": [
             {
                 "title": "Pengguna",
@@ -25,6 +22,162 @@
                 "route": "user-management.roles",
                 "permissions": [
                     "view role"
+                ]
+            }
+        ]
+    },
+    {
+        "active": "master-management",
+        "title": "Kelola Master",
+        "children": [
+            {
+                "title": "Supplier",
+                "route": "master-management.suppliers",
+                "permissions": [
+                    "view supplier"
+                ]
+            },
+            {
+                "title": "Pelanggan",
+                "route": "master-management.customers",
+                "permissions": [
+                    "view customer"
+                ]
+            },
+            {
+                "title": "Gudang",
+                "route": "master-management.warehouses",
+                "permissions": [
+                    "view warehouse"
+                ]
+            },
+            {
+                "title": "Kategori Produk",
+                "route": "master-management.product-categories",
+                "permissions": [
+                    "view category"
+                ]
+            },
+            {
+                "title": "Produk",
+                "route": "master-management.products",
+                "permissions": [
+                    "view product"
+                ]
+            },
+            {
+                "title": "Harga Produk",
+                "route": "master-management.product-prices",
+                "permissions": [
+                    "view price"
+                ]
+            },
+            {
+                "title": "Stok",
+                "route": "master-management.warehouse-stocks",
+                "permissions": [
+                    "view stock"
+                ]
+            }
+        ]
+    },
+    {
+        "active": "purchase-management",
+        "title": "Kelola Pembelian",
+        "children": [
+            {
+                "title": "Pembelian",
+                "route": "purchase-management.purchases",
+                "permissions": [
+                    "view purchase"
+                ]
+            },
+            {
+                "title": "Penerimaan",
+                "route": "purchase-management.receipts",
+                "permissions": [
+                    "view receipt"
+                ]
+            }
+        ]
+    },
+    {
+        "active": "sales-management",
+        "title": "Kelola Penjualan",
+        "children": [
+            {
+                "title": "Sales Order",
+                "route": "sales-management.sales-orders",
+                "permissions": [
+                    "view sales-order"
+                ]
+            },
+            {
+                "title": "Invoice",
+                "route": "sales-management.sales-invoices",
+                "permissions": [
+                    "view sales-invoice"
+                ]
+            }
+        ]
+    },
+    {
+        "active": "fifo-management",
+        "title": "Fifo",
+        "children": [
+            {
+                "title": "Fifo Layers",
+                "route": "fifo-management.fifo-layers",
+                "permissions": [
+                    "view fifo-layers"
+                ]
+            },
+            {
+                "title": "Fifo Usages",
+                "route": "fifo-management.fifo-usages",
+                "permissions": [
+                    "view fifo-usages"
+                ]
+            }
+        ]
+    },
+    {
+        "active": "report",
+        "title": "Laporan",
+        "children": [
+            {
+                "title": "Laporan Produk",
+                "route": "report.report-products",
+                "permissions": [
+                    "view report-produk"
+                ]
+            },
+            {
+                "title": "Laporan Stok",
+                "route": "report.report-stocks",
+                "permissions": [
+                    "view report-stok"
+                ]
+            },
+            {
+                "title": "Laporan Pembelian",
+                "route": "report.report-purchases",
+                "permissions": [
+                    "view report-pembelian"
+                ]
+            },
+            {
+                "title": "Laporan Penjualan",
+                "route": "report.report-sales",
+                "permissions": [
+                    "view report-penjualan"
+                ]
+            },
+            {
+                "title": "Laporan FIFO",
+                "route": "report.report-fifo",
+                "permissions": [
+                    "view report-fifo"
                 ]
             }
         ]

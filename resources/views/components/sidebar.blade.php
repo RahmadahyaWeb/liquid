@@ -15,7 +15,7 @@
                 </button>
                 <a href="/" class="flex ms-2 md:me-24">
                     <span class="self-center text-xl font-semibold sm:text-2xl whitespace-nowrap">
-                        {{ config('app.name') }}
+                        {{ \App\Models\Config::where('config', 'nama_toko')->value('value') }}
                     </span>
                 </a>
             </div>
@@ -45,6 +45,11 @@
                                 <a href="{{ route('dashboard') }}"
                                     class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" role="menuitem"
                                     wire:navigate>Dashboard</a>
+                            </li>
+                            <li>
+                                <a href="{{ route('config') }}"
+                                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" role="menuitem"
+                                    wire:navigate>Pengaturan</a>
                             </li>
                             <li>
                                 <a href="/logout" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
@@ -108,7 +113,7 @@
                                         <li>
                                             <a href="{{ route($child['route']) }}"
                                                 class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group 
-                                        {{ request()->routeIs($child['route']) ? 'text-zinc-800 bg-gray-100' : 'text-gray-900 hover:bg-gray-100 ' }}"
+                                        {{ request()->routeIs($child['route'] . '*') ? 'text-zinc-800 bg-gray-100' : 'text-gray-900 hover:bg-gray-100 ' }}"
                                                 wire:navigate>
                                                 {{ $child['title'] }}
                                             </a>

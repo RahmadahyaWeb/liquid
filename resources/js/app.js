@@ -5,6 +5,12 @@ const modals = {};
 
 document.addEventListener('livewire:navigated', () => {
     initFlowbite();
+
+    document.addEventListener('livewire:navigating', () => {
+        if (window.chart) {
+            window.chart.destroy();
+        }
+    })
 });
 
 document.addEventListener('livewire:init', () => {

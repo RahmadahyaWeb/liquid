@@ -26,7 +26,7 @@ class Login extends Component
         $this->validate();
 
         if (Auth::attempt($this->only('email', 'password'))) {
-            $this->redirectIntended(Dashboard::class, true);
+            $this->redirectIntended(Dashboard::class);
         } else {
             $this->addError('email', 'Wrong email or password.');
         }

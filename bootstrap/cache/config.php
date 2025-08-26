@@ -12,18 +12,18 @@
   ),
   'app' => 
   array (
-    'name' => 'Laravel',
+    'name' => 'LiquidAPP',
     'env' => 'local',
     'debug' => true,
     'url' => 'http://localhost',
     'frontend_url' => 'http://localhost:3000',
     'asset_url' => NULL,
     'timezone' => 'UTC',
-    'locale' => 'en',
-    'fallback_locale' => 'en',
-    'faker_locale' => 'en_US',
+    'locale' => 'id',
+    'fallback_locale' => 'id',
+    'faker_locale' => 'id_ID',
     'cipher' => 'AES-256-CBC',
-    'key' => 'base64:ylfXsNbe1P3Lk9ybjQWSJ8ZZHmrxQUV7Sdzlx2b05xg=',
+    'key' => 'base64:FMbWwzLR1Kfs/mvN+5NlkOJakfE2XuApKfXQ6cvB2AA=',
     'previous_keys' => 
     array (
     ),
@@ -164,8 +164,8 @@
       'file' => 
       array (
         'driver' => 'file',
-        'path' => '/Users/muhammadachyadirahmat/rahmadahya/starter/storage/framework/cache/data',
-        'lock_path' => '/Users/muhammadachyadirahmat/rahmadahya/starter/storage/framework/cache/data',
+        'path' => '/Users/muhammadachyadirahmat/rahmadahya/joki/roji/storage/framework/cache/data',
+        'lock_path' => '/Users/muhammadachyadirahmat/rahmadahya/joki/roji/storage/framework/cache/data',
       ),
       'memcached' => 
       array (
@@ -209,7 +209,7 @@
         'driver' => 'octane',
       ),
     ),
-    'prefix' => 'laravel_cache_',
+    'prefix' => 'liquidapp_cache_',
   ),
   'database' => 
   array (
@@ -307,7 +307,7 @@
       'options' => 
       array (
         'cluster' => 'redis',
-        'prefix' => 'laravel_database_',
+        'prefix' => 'liquidapp_database_',
         'persistent' => false,
       ),
       'default' => 
@@ -330,6 +330,128 @@
       ),
     ),
   ),
+  'excel' => 
+  array (
+    'exports' => 
+    array (
+      'chunk_size' => 1000,
+      'pre_calculate_formulas' => false,
+      'strict_null_comparison' => false,
+      'csv' => 
+      array (
+        'delimiter' => ',',
+        'enclosure' => '"',
+        'line_ending' => '
+',
+        'use_bom' => false,
+        'include_separator_line' => false,
+        'excel_compatibility' => false,
+        'output_encoding' => '',
+        'test_auto_detect' => true,
+      ),
+      'properties' => 
+      array (
+        'creator' => '',
+        'lastModifiedBy' => '',
+        'title' => '',
+        'description' => '',
+        'subject' => '',
+        'keywords' => '',
+        'category' => '',
+        'manager' => '',
+        'company' => '',
+      ),
+    ),
+    'imports' => 
+    array (
+      'read_only' => true,
+      'ignore_empty' => false,
+      'heading_row' => 
+      array (
+        'formatter' => 'slug',
+      ),
+      'csv' => 
+      array (
+        'delimiter' => NULL,
+        'enclosure' => '"',
+        'escape_character' => '\\',
+        'contiguous' => false,
+        'input_encoding' => 'guess',
+      ),
+      'properties' => 
+      array (
+        'creator' => '',
+        'lastModifiedBy' => '',
+        'title' => '',
+        'description' => '',
+        'subject' => '',
+        'keywords' => '',
+        'category' => '',
+        'manager' => '',
+        'company' => '',
+      ),
+      'cells' => 
+      array (
+        'middleware' => 
+        array (
+        ),
+      ),
+    ),
+    'extension_detector' => 
+    array (
+      'xlsx' => 'Xlsx',
+      'xlsm' => 'Xlsx',
+      'xltx' => 'Xlsx',
+      'xltm' => 'Xlsx',
+      'xls' => 'Xls',
+      'xlt' => 'Xls',
+      'ods' => 'Ods',
+      'ots' => 'Ods',
+      'slk' => 'Slk',
+      'xml' => 'Xml',
+      'gnumeric' => 'Gnumeric',
+      'htm' => 'Html',
+      'html' => 'Html',
+      'csv' => 'Csv',
+      'tsv' => 'Csv',
+      'pdf' => 'Dompdf',
+    ),
+    'value_binder' => 
+    array (
+      'default' => 'Maatwebsite\\Excel\\DefaultValueBinder',
+    ),
+    'cache' => 
+    array (
+      'driver' => 'memory',
+      'batch' => 
+      array (
+        'memory_limit' => 60000,
+      ),
+      'illuminate' => 
+      array (
+        'store' => NULL,
+      ),
+      'default_ttl' => 10800,
+    ),
+    'transactions' => 
+    array (
+      'handler' => 'db',
+      'db' => 
+      array (
+        'connection' => NULL,
+      ),
+    ),
+    'temporary_files' => 
+    array (
+      'local_path' => '/Users/muhammadachyadirahmat/rahmadahya/joki/roji/storage/framework/cache/laravel-excel',
+      'local_permissions' => 
+      array (
+      ),
+      'remote_disk' => NULL,
+      'remote_prefix' => NULL,
+      'force_resync_remote' => NULL,
+    ),
+  ),
   'filesystems' => 
   array (
     'default' => 'local',
@@ -338,7 +460,7 @@
       'local' => 
       array (
         'driver' => 'local',
-        'root' => '/Users/muhammadachyadirahmat/rahmadahya/starter/storage/app/private',
+        'root' => '/Users/muhammadachyadirahmat/rahmadahya/joki/roji/storage/app/private',
         'serve' => true,
         'throw' => false,
         'report' => false,
@@ -346,7 +468,7 @@
       'public' => 
       array (
         'driver' => 'local',
-        'root' => '/Users/muhammadachyadirahmat/rahmadahya/starter/storage/app/public',
+        'root' => '/Users/muhammadachyadirahmat/rahmadahya/joki/roji/storage/app/public',
         'url' => 'http://localhost/storage',
         'visibility' => 'public',
         'throw' => false,
@@ -368,13 +490,13 @@
     ),
     'links' => 
     array (
-      '/Users/muhammadachyadirahmat/rahmadahya/starter/public/storage' => '/Users/muhammadachyadirahmat/rahmadahya/starter/storage/app/public',
+      '/Users/muhammadachyadirahmat/rahmadahya/joki/roji/public/storage' => '/Users/muhammadachyadirahmat/rahmadahya/joki/roji/storage/app/public',
     ),
   ),
   'livewire' => 
   array (
     'class_namespace' => 'App\\Livewire',
-    'view_path' => '/Users/muhammadachyadirahmat/rahmadahya/starter/resources/views/livewire',
+    'view_path' => '/Users/muhammadachyadirahmat/rahmadahya/joki/roji/resources/views/livewire',
     'layout' => 'components.layouts.app',
     'lazy_placeholder' => NULL,
     'temporary_file_upload' => 
@@ -438,14 +560,14 @@
       'single' => 
       array (
         'driver' => 'single',
-        'path' => '/Users/muhammadachyadirahmat/rahmadahya/starter/storage/logs/laravel.log',
+        'path' => '/Users/muhammadachyadirahmat/rahmadahya/joki/roji/storage/logs/laravel.log',
         'level' => 'debug',
         'replace_placeholders' => true,
       ),
       'daily' => 
       array (
         'driver' => 'daily',
-        'path' => '/Users/muhammadachyadirahmat/rahmadahya/starter/storage/logs/laravel.log',
+        'path' => '/Users/muhammadachyadirahmat/rahmadahya/joki/roji/storage/logs/laravel.log',
         'level' => 'debug',
         'days' => 14,
         'replace_placeholders' => true,
@@ -510,7 +632,7 @@
       ),
       'emergency' => 
       array (
-        'path' => '/Users/muhammadachyadirahmat/rahmadahya/starter/storage/logs/laravel.log',
+        'path' => '/Users/muhammadachyadirahmat/rahmadahya/joki/roji/storage/logs/laravel.log',
       ),
     ),
   ),
@@ -581,14 +703,14 @@
     'from' => 
     array (
       'address' => 'hello@example.com',
-      'name' => 'Laravel',
+      'name' => 'LiquidAPP',
     ),
     'markdown' => 
     array (
       'theme' => 'default',
       'paths' => 
       array (
-        0 => '/Users/muhammadachyadirahmat/rahmadahya/starter/resources/views/vendor/mail',
+        0 => '/Users/muhammadachyadirahmat/rahmadahya/joki/roji/resources/views/vendor/mail',
       ),
     ),
   ),
@@ -725,7 +847,7 @@
     'lifetime' => 120,
     'expire_on_close' => false,
     'encrypt' => false,
-    'files' => '/Users/muhammadachyadirahmat/rahmadahya/starter/storage/framework/sessions',
+    'files' => '/Users/muhammadachyadirahmat/rahmadahya/joki/roji/storage/framework/sessions',
     'connection' => NULL,
     'table' => 'sessions',
     'store' => NULL,
@@ -734,7 +856,7 @@
       0 => 2,
       1 => 100,
     ),
-    'cookie' => 'laravel_session',
+    'cookie' => 'liquidapp_session',
     'path' => '/',
     'domain' => NULL,
     'secure' => NULL,
@@ -824,9 +946,9 @@
   array (
     'paths' => 
     array (
-      0 => '/Users/muhammadachyadirahmat/rahmadahya/starter/resources/views',
+      0 => '/Users/muhammadachyadirahmat/rahmadahya/joki/roji/resources/views',
     ),
-    'compiled' => '/Users/muhammadachyadirahmat/rahmadahya/starter/storage/framework/views',
+    'compiled' => '/Users/muhammadachyadirahmat/rahmadahya/joki/roji/storage/framework/views',
   ),
   'cors' => 
   array (
@@ -855,6 +977,61 @@
     ),
     'max_age' => 0,
     'supports_credentials' => false,
+  ),
+  'dompdf' => 
+  array (
+    'show_warnings' => false,
+    'public_path' => NULL,
+    'convert_entities' => true,
+    'options' => 
+    array (
+      'font_dir' => '/Users/muhammadachyadirahmat/rahmadahya/joki/roji/storage/fonts',
+      'font_cache' => '/Users/muhammadachyadirahmat/rahmadahya/joki/roji/storage/fonts',
+      'temp_dir' => '/var/folders/x9/xpr0_dzd3mzgl3wg55bw95j80000gn/T',
+      'chroot' => '/Users/muhammadachyadirahmat/rahmadahya/joki/roji',
+      'allowed_protocols' => 
+      array (
+        'data://' => 
+        array (
+          'rules' => 
+          array (
+          ),
+        ),
+        'file://' => 
+        array (
+          'rules' => 
+          array (
+          ),
+        ),
+        'http://' => 
+        array (
+          'rules' => 
+          array (
+          ),
+        ),
+        'https://' => 
+        array (
+          'rules' => 
+          array (
+          ),
+        ),
+      ),
+      'artifactPathValidation' => NULL,
+      'log_output_file' => NULL,
+      'enable_font_subsetting' => false,
+      'pdf_backend' => 'CPDF',
+      'default_media_type' => 'screen',
+      'default_paper_size' => 'a4',
+      'default_paper_orientation' => 'portrait',
+      'default_font' => 'serif',
+      'dpi' => 96,
+      'enable_php' => false,
+      'enable_javascript' => true,
+      'enable_remote' => false,
+      'allowed_remote_hosts' => NULL,
+      'font_height_ratio' => 1.1,
+      'enable_html5_parser' => true,
+    ),
   ),
   'tinker' => 
   array (

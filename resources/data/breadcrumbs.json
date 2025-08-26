@@ -5,24 +5,206 @@
             "route": "dashboard"
         }
     ],
-    "user": [
+    "user-management.users": [
         {
             "label": "Dashboard",
             "route": "dashboard"
         },
         {
             "label": "Pengguna",
-            "route": "user"
+            "route": "user-management.users"
         }
     ],
-    "role": [
+    "user-management.roles": [
         {
             "label": "Dashboard",
             "route": "dashboard"
         },
         {
             "label": "Hak Akses Pengguna",
-            "route": "role"
+            "route": "user-management.roles"
+        }
+    ],
+    "purchase-management.purchases": [
+        {
+            "label": "Dashboard",
+            "route": "dashboard"
+        },
+        {
+            "label": "Data Pembelian",
+            "route": "purchase-management.purchases"
+        }
+    ],
+    "purchase-management.purchases-detail": [
+        {
+            "label": "Dashboard",
+            "route": "dashboard"
+        },
+        {
+            "label": "Data Pembelian",
+            "route": "purchase-management.purchases"
+        },
+        {
+            "label": "Detail Pembelian",
+            "route": "purchase-management.purchases-detail"
+        }
+    ],
+    "purchase-management.receipts": [
+        {
+            "label": "Dashboard",
+            "route": "dashboard"
+        },
+        {
+            "label": "Data Penerimaan",
+            "route": "purchase-management.receipts"
+        }
+    ],
+    "sales-management.sales-orders": [
+        {
+            "label": "Dashboard",
+            "route": "dashboard"
+        },
+        {
+            "label": "Data Sales Order",
+            "route": "sales-management.sales-orders"
+        }
+    ],
+    "sales-management.sales-orders-detail": [
+        {
+            "label": "Dashboard",
+            "route": "dashboard"
+        },
+        {
+            "label": "Data Sales Order",
+            "route": "sales-management.sales-orders"
+        },
+        {
+            "label": "Detail Data Sales Order",
+            "route": "sales-management.sales-orders-detail"
+        }
+    ],
+    "sales-management.sales-invoices": [
+        {
+            "label": "Dashboard",
+            "route": "dashboard"
+        },
+        {
+            "label": "Data Invoice",
+            "route": "sales-management.sales-invoices"
+        }
+    ],
+    "sales-management.sales-invoices-detail": [
+        {
+            "label": "Dashboard",
+            "route": "dashboard"
+        },
+        {
+            "label": "Data Invoice",
+            "route": "sales-management.sales-invoices"
+        },
+        {
+            "label": "Detail Data Invoice",
+            "route": "sales-management.sales-invoices-detail"
+        }
+    ],
+    "master-management.suppliers": [
+        {
+            "label": "Dashboard",
+            "route": "dashboard"
+        },
+        {
+            "label": "Data Supplier",
+            "route": "master-management.suppliers"
+        }
+    ],
+    "master-management.customers": [
+        {
+            "label": "Dashboard",
+            "route": "dashboard"
+        },
+        {
+            "label": "Data Pelanggan",
+            "route": "master-management.customers"
+        }
+    ],
+    "master-management.warehouses": [
+        {
+            "label": "Dashboard",
+            "route": "dashboard"
+        },
+        {
+            "label": "Data Gudang",
+            "route": "master-management.warehouses"
+        }
+    ],
+    "master-management.product-categories": [
+        {
+            "label": "Dashboard",
+            "route": "dashboard"
+        },
+        {
+            "label": "Data Kategori Produk",
+            "route": "master-management.product-categories"
+        }
+    ],
+    "master-management.products": [
+        {
+            "label": "Dashboard",
+            "route": "dashboard"
+        },
+        {
+            "label": "Data Produk",
+            "route": "master-management.products"
+        }
+    ],
+    "master-management.product-prices": [
+        {
+            "label": "Dashboard",
+            "route": "dashboard"
+        },
+        {
+            "label": "Data Harga Produk",
+            "route": "master-management.product-prices"
+        }
+    ],
+    "master-management.warehouse-stocks": [
+        {
+            "label": "Dashboard",
+            "route": "dashboard"
+        },
+        {
+            "label": "Data Stok",
+            "route": "master-management.warehouse-stocks"
+        }
+    ],
+    "fifo-management.fifo-usages": [
+        {
+            "label": "Dashboard",
+            "route": "dashboard"
+        },
+        {
+            "label": "Data Fifo Usages",
+            "route": "master-management.fifo-usages"
+        }
+    ],
+    "fifo-management.fifo-layers": [
+        {
+            "label": "Dashboard",
+            "route": "dashboard"
+        },
+        {
+            "label": "Data Fifo Layers",
+            "route": "master-management.fifo-layers"
+        }
+    ],
+    "config": [
+        {
+            "label": "Dashboard",
+            "route": "dashboard"
+        },
+        {
+            "label": "Config",
+            "route": "config"
         }
     ]
 }
